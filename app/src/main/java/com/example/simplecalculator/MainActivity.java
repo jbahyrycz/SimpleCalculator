@@ -16,9 +16,9 @@ import java.text.DecimalFormat;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     TextView resultTv, solutionTv;
-    MaterialButton buttonC, buttonOpenBracket, buttonClosedBracket, buttonDivide, button7,
+    MaterialButton buttonOpenBracket, buttonClosedBracket, buttonDivide, button7,
     button8, button9, buttonMultiply, button4, button5, button6, buttonPlus, button1, button2,
-    button3, buttonMinus, buttonAc, button0, buttonComma, buttonEquals;
+    button3, buttonMinus, buttonAc, button0, buttonDot, buttonEquals;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         resultTv = findViewById(R.id.result_tv);
         solutionTv = findViewById(R.id.solution_tv);
 
-        assignId(buttonC, R.id.button_c);
+
         assignId(buttonOpenBracket, R.id.button_open_bracket);
         assignId(buttonClosedBracket, R.id.button_closed_bracket);
         assignId(buttonDivide, R.id.button_divide);
@@ -43,9 +43,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         assignId(button2, R.id.button_2);
         assignId(button3, R.id.button_3);
         assignId(buttonMinus, R.id.button_minus);
-        assignId(buttonAc, R.id.button_AC);
+        assignId(buttonAc, R.id.button_ac);
         assignId(button0, R.id.button_0);
-        assignId(buttonComma, R.id.button_comma);
+        assignId(buttonDot, R.id.button_dot);
         assignId(buttonEquals, R.id.button_equals);
     }
 
@@ -71,19 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        if (buttonText.equals("C")){
-            if (dataToCalculate.length() > 1){
-                dataToCalculate = dataToCalculate.substring(0, dataToCalculate.length()-1);
-            }
-            else{
-                solutionTv.setText("");
-                resultTv.setText("0");
-                return;
-            }
-        }
-        else{
-            dataToCalculate = dataToCalculate + buttonText;
-        }
+        dataToCalculate = dataToCalculate + buttonText;
 
         solutionTv.setText(dataToCalculate);
         String finalResult = getResult(dataToCalculate);

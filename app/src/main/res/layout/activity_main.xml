@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,7 +13,7 @@
         android:id="@+id/solution_tv"
         android:textSize="32dp"
         android:textAlignment="textEnd"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_above="@id/result_tv"
         android:layout_margin="16dp"
         />
@@ -24,7 +25,7 @@
         android:text="0"
         android:textSize="64dp"
         android:textAlignment="textEnd"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:layout_above="@id/buttons_layout"
         android:layout_margin="16dp"
         />
@@ -48,22 +49,22 @@
                 android:layout_height="72dp"
                 app:cornerRadius="36dp"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:textSize="32dp"
-                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textColor="@color/black"
                 android:layout_margin="12dp"
-                android:id="@+id/button_c"
-                android:backgroundTint="#DD3B13"
-                android:text="C"/>
+                android:id="@+id/button_ac"
+                android:backgroundTint="#9F9F9F"
+                android:text="AC"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
                 android:layout_height="72dp"
                 app:cornerRadius="36dp"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:textSize="32dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_margin="12dp"
                 android:id="@+id/button_open_bracket"
-                android:backgroundTint="#DD3B13"
+                android:backgroundTint="#9F9F9F"
                 android:text="("/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -71,10 +72,10 @@
                 app:cornerRadius="36dp"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
                 android:textSize="32dp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_margin="12dp"
                 android:id="@+id/button_closed_bracket"
-                android:backgroundTint="#DD3B13"
+                android:backgroundTint="#9F9F9F"
                 android:text=")"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -85,7 +86,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_divide"
-                android:backgroundTint="#FF8222"
+                android:backgroundTint="#FB7712"
                 android:text="/"/>
         </LinearLayout>
         <LinearLayout
@@ -103,6 +104,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_7"
+                android:backgroundTint="#202020"
                 android:text="7"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -113,6 +115,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_8"
+                android:backgroundTint="#202020"
                 android:text="8"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -123,6 +126,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_9"
+                android:backgroundTint="#202020"
                 android:text="9"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -133,7 +137,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_multiply"
-                android:backgroundTint="#FF8222"
+                android:backgroundTint="#FB7712"
                 android:text="*"/>
         </LinearLayout>
         <LinearLayout
@@ -151,6 +155,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_4"
+                android:backgroundTint="#202020"
                 android:text="4"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -161,6 +166,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_5"
+                android:backgroundTint="#202020"
                 android:text="5"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -171,6 +177,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_6"
+                android:backgroundTint="#202020"
                 android:text="6"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -181,7 +188,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_minus"
-                android:backgroundTint="#FF8222"
+                android:backgroundTint="#FB7712"
                 android:text="-"/>
         </LinearLayout>
         <LinearLayout
@@ -199,6 +206,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_1"
+                android:backgroundTint="#202020"
                 android:text="1"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -209,6 +217,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_2"
+                android:backgroundTint="#202020"
                 android:text="2"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -219,6 +228,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_3"
+                android:backgroundTint="#202020"
                 android:text="3"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -229,7 +239,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_plus"
-                android:backgroundTint="#FF8222"
+                android:backgroundTint="#FB7712"
                 android:text="+"/>
         </LinearLayout>
         <LinearLayout
@@ -239,18 +249,7 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
-                android:layout_width="72dp"
-                android:layout_height="72dp"
-                app:cornerRadius="36dp"
-                style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
-                android:textSize="20dp"
-                android:textColor="@color/white"
-                android:layout_margin="12dp"
-                android:id="@+id/button_AC"
-                android:backgroundTint="#DD3B13"
-                android:text="AC"/>
-            <com.google.android.material.button.MaterialButton
-                android:layout_width="72dp"
+                android:layout_width="168dp"
                 android:layout_height="72dp"
                 app:cornerRadius="36dp"
                 style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
@@ -258,6 +257,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_0"
+                android:backgroundTint="#202020"
                 android:text="0"/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
@@ -267,8 +267,9 @@
                 android:textSize="32dp"
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
-                android:id="@+id/button_comma"
-                android:text=","/>
+                android:id="@+id/button_dot"
+                android:backgroundTint="#202020"
+                android:text="."/>
             <com.google.android.material.button.MaterialButton
                 android:layout_width="72dp"
                 android:layout_height="72dp"
@@ -278,7 +279,7 @@
                 android:textColor="@color/white"
                 android:layout_margin="12dp"
                 android:id="@+id/button_equals"
-                android:backgroundTint="#FF8222"
+                android:backgroundTint="#FB7712"
                 android:text="="/>
         </LinearLayout>
     </LinearLayout>
